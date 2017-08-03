@@ -21,11 +21,9 @@ function checkPassword() {
       while (match == False) {
           if (dict == pw) {
               match = True;
+              return "Your password is weak";
           }
       }
    }
-  if (match == True) {
-    print("Your password is weak.");
-  }
 
 }
