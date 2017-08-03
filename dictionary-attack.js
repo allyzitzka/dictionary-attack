@@ -17,11 +17,15 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-   for dict in wordsList:
-      while match == False:
-          if dict == pw:
+   for (dict in wordsList) {
+      while (match == False) {
+          if (dict == pw) {
               match = True;
-  if match == True:
+          }
+      }
+   }
+  if (match == True) {
     print("Your password is weak.");
+  }
 
 }
