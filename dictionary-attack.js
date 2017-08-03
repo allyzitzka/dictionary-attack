@@ -19,7 +19,7 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-  for (int i = 0; i < wordsList.length; i++) {
+  for (var i = 0; i < wordsList.length; i++) {
      if (input == wordsList[i]) {
         document.getElementById("result").innerHTML = "Your password is weak";
         break;
