@@ -1,6 +1,6 @@
 var wordsList = [];
 
-document.getElementById("pw").innerHTML = pw
+document.getElementById("pw").innerHTML = var pass;
 
 var match = False;
 
@@ -19,17 +19,19 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
- for (dict in wordsList) {
-  while (match == False) {
-    if (dict == pw) {
+  for (dict in wordsList) {
+    while (match == False) {
+      if (dict == pass) {
         match = True;
-        return "Your password is weak";
-          }
-    else {
-      return "Your password is strong";
+      }
     }
-   }
- }
+  }
+  if (match == True) {
+    return "Your password is weak");
+  }
+  else {
+    return "Your password is strong");
+  }
 }
 
 
