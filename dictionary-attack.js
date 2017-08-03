@@ -1,6 +1,6 @@
 var wordsList = [];
 
-document.getElementById("pw").innerHTML = var pass;
+var pass = document.getElementById("pw");
 
 var match = false;
 
@@ -28,10 +28,10 @@ function checkPassword() {
     }
   }
   if (match == true) {
-    document.getElementById("results").innerHTML = "Your password is weak";
+    document.getElementById("result").innerHTML = "Your password is weak";
   }
   else {
-    document.getElementById("results").innerHTML = "Your password is strong";
+    document.getElementById("result").innerHTML = "Your password is strong";
   }
 }
 
