@@ -12,7 +12,7 @@ function init() {
   });
 }
 
-window.onload = init();
+window.onload = init;
 
 /* ADD YOUR CODE BELOW */
 
