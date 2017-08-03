@@ -23,6 +23,7 @@ function checkPassword() {
     while (match == False) {
       if (dict == pass) {
         match = True;
+        break;
       }
     }
   }
