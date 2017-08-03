@@ -19,9 +19,9 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-  for (dict in wordsList) {
+  for (int i = 0; i < wordsList.length; i++) {
     while (match == false) {
-      if (dict == pass) {
+      if (pass == wordsList[i]) {
         match = true;
         break;
       }
