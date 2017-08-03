@@ -28,10 +28,10 @@ function checkPassword() {
     }
   }
   if (match == true) {
-    return "Your password is weak");
+    document.getElementById("results").innerHTML = "Your password is weak";
   }
   else {
-    return "Your password is strong");
+    document.getElementById("results").innerHTML = "Your password is strong";
   }
 }
 
