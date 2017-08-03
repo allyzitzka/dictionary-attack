@@ -20,8 +20,15 @@ function checkPassword() {
  for (dict in wordsList) {
   while (match == False) {
     if (dict == pw) {
-      var results = pw.replace(pw, "Your password is weak");
+      var str = document.getElementById("pw").innerHTML;
+      var res = str.replace(pw, "Your password is weak");
+      document.getElementById("pw").innerHTML = res;
     }
    }
  }
 }
+
+
+ 
+
+    
