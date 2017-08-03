@@ -20,7 +20,7 @@ function checkPassword() {
  for (dict in wordsList) {
   while (match == False) {
     if (dict == pw) {
-      var result = pw.replace(pw, "Your password is weak");
+      var results = pw.replace(pw, "Your password is weak");
     }
    }
  }
