@@ -1,7 +1,5 @@
 var wordsList = [];
 
-var pass = document.getElementById("pw");
-
 var match = false;
 
 function init() {
@@ -19,7 +17,7 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-  var pass = document.getElementById("pw");
+  var pass = document.getElementById("pw").innerH;
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
         document.getElementById("result").innerHTML = "Your password is weak";
