@@ -21,7 +21,10 @@ function checkPassword() {
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
         document.getElementById("result").innerHTML = "Your password is weak";
-        break;
+     break;}
+     else  {
+        document.getElementById("result").innerHTML = "Not Bad!";
+        
       }
   }
 }
