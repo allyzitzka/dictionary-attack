@@ -1,6 +1,6 @@
 var wordsList = [];
 
-var match = false;
+// var match = false;
 
 function init() {
   // Load the words from the dictionary text file to wordsList
@@ -17,7 +17,7 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-  var pass = document.getElementById("pw").innerH;
+  var pass = document.getElementById("pw").value;
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
         document.getElementById("result").innerHTML = "Your password is weak";
