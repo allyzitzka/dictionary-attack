@@ -1,5 +1,7 @@
 var wordsList = [];
 
+document.getElementById("pw").innerHTML = pw
+
 var match = False;
 
 function init() {
