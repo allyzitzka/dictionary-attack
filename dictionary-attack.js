@@ -19,7 +19,7 @@ window.onload = init;
 function checkPassword() {
    for dict in wordsList:
       while match == False:
-          if dict == word:
+          if dict == pw:
               match = True;
   if match == True:
     print("Your password is weak.");
