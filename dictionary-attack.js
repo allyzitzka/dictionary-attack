@@ -2,7 +2,7 @@ var wordsList = [];
 
 document.getElementById("pw").innerHTML = var pass;
 
-var match = False;
+var match = false;
 
 function init() {
   // Load the words from the dictionary text file to wordsList
@@ -20,14 +20,14 @@ window.onload = init;
 
 function checkPassword() {
   for (dict in wordsList) {
-    while (match == False) {
+    while (match == false) {
       if (dict == pass) {
-        match = True;
+        match = true;
         break;
       }
     }
   }
-  if (match == True) {
+  if (match == true) {
     return "Your password is weak");
   }
   else {
