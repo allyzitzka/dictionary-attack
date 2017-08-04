@@ -22,13 +22,16 @@ function checkPassword() {
   var pass = document.getElementById("pw").value;
   var number = pass.includes("1") || pass.includes("3") || pass.includes("4") || pass.includes("5") || pass.includes("8") || pass.includes("0");
   while (number == true) {
-      var number = pass.includes("1") || pass.includes("3") || pass.includes("4") || pass.includes("5") || pass.includes("8") || pass.includes("0");
+    if (number == false) {
+      break;
+    }
       var pass = pass.replace("3", "e");
       var pass = pass.replace("4", "a");
       var pass = pass.replace("1", "i");
       var pass = pass.replace("0", "o");
       var pass = pass.replace("5", "s");
       var pass = pass.replace("8", "b");
+      var number = pass.includes("1") || pass.includes("3") || pass.includes("4") || pass.includes("5") || pass.includes("8") || pass.includes("0");
       document.getElementById("password").innerHTML = pass;
   }
   for (var i = 0; i < wordsList.length; i++) {
