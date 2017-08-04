@@ -29,6 +29,7 @@ function checkPassword() {
       var s = o.replace("5", "s");
       var b = s.replace("8", "b");
       pass = b
+      document.getElementById("password").innerHTML = b;
   }
 
   for (var i = 0; i < wordsList.length; i++) {
