@@ -18,10 +18,11 @@ window.onload = init;
 
 function checkPassword() {
   document.getElementById("results").innerHTML = "Results here";
-  var check = false
+  var check = false;
   var pass = document.getElementById("pw").value;
+  var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8");
   while (number == true) {
-      var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
+      var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8");
       var pass = pass.replace("3", "e");
       var pass = pass.replace("4", "a");
       var pass = pass.replace("1", "i");
@@ -32,7 +33,7 @@ function checkPassword() {
   }
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
-        var check = true
+        var check = true;
         break;
       }
   }
