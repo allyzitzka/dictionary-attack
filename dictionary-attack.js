@@ -20,14 +20,14 @@ function checkPassword() {
   document.getElementById("results").innerHTML = "Results here";
   var check = false
   var pass = document.getElementById("pw").value;
-  var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
   do {
-      var e = pass.replace("3", "e");
-      var a = pass.replace("4", "a");
-      var i = pass.replace("1", "i");
-      var o = pass.replace("0", "o");
-      var s = pass.replace("5", "s");
-      var b = pass.replace("8", "b");
+      var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
+      var pass = pass.replace("3", "e");
+      var pass = pass.replace("4", "a");
+      var pass = pass.replace("1", "i");
+      var pass = pass.replace("0", "o");
+      var pass = pass.replace("5", "s");
+      var pass = pass.replace("8", "b");
   }
   while (number == true);
 
