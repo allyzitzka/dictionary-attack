@@ -21,8 +21,8 @@ function checkPassword() {
   var check = false
   var pass = document.getElementById("pw").value;
   for (var i = 0; i < wordsList.length; i++) {
-     var pw = wordsList[i];
-     var n = pw.includes(pass);
+     var word = wordsList[i];
+     var n = word.includes(pass);
      if (pass == wordsList[i] || n == true) {
         var check = true
         break;
