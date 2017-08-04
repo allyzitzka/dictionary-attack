@@ -17,6 +17,7 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
+  document.getElementById("results").innerHTML = "Results here";
   var check = false
   var pass = document.getElementById("pw").value;
   for (var i = 0; i < wordsList.length; i++) {
