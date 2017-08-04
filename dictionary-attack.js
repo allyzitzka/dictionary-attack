@@ -20,10 +20,19 @@ function checkPassword() {
   document.getElementById("results").innerHTML = "Results here";
   var check = false
   var pass = document.getElementById("pw").value;
+  var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
+  do {
+      var e = pass.replace("3", "e");
+      var a = pass.replace("4", "a");
+      var i = pass.replace("1", "i");
+      var o = pass.replace("0", "o");
+      var s = pass.replace("5", "s");
+      var b = pass.replace("8", "b");
+  }
+  while (number == true);
+
   for (var i = 0; i < wordsList.length; i++) {
-     var word = wordsList[i];
-     var n = word.includes(pass);
-     if (pass == wordsList[i] || n == true) {
+     if (pass == wordsList[i]) {
         var check = true
         break;
       }
