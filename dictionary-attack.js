@@ -17,19 +17,32 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
+  document.getElementById("results").innerHTML = "Results here";
+  var check = false
   var pass = document.getElementById("pw").value;
+  while (number == true) {
+      var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
+      var e = pass.replace("3", "e");
+      var a = e.replace("4", "a");
+      var i = a.replace("1", "i");
+      var o = i.replace("0", "o");
+      var s = o.replace("5", "s");
+      var b = s.replace("8", "b");
+      pass = b
+      document.getElementById("password").innerHTML = b;
+  }
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
-        document.getElementById("result").innerHTML = "Your password is weak";
-     break;}
-     else  {
-        document.getElementById("result").innerHTML = "Not Bad!";
-        
+        var check = true
+        break;
       }
+  }
+if (check == true) {
+  document.getElementById("results").innerHTML = "Your password is weak";
+}
+  else {
+document.getElementById("results").innerHTML = "Not bad";
   }
 }
 
 
- 
-
-    
