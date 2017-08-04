@@ -20,7 +20,7 @@ function checkPassword() {
   document.getElementById("results").innerHTML = "Results here";
   var check = false
   var pass = document.getElementById("pw").value;
-  do {
+  while (number == true) {
       var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8")
       var pass = pass.replace("3", "e");
       var pass = pass.replace("4", "a");
@@ -29,7 +29,6 @@ function checkPassword() {
       var pass = pass.replace("5", "s");
       var pass = pass.replace("8", "b");
   }
-  while (number == true);
 
   for (var i = 0; i < wordsList.length; i++) {
      if (pass == wordsList[i]) {
