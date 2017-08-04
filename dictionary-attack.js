@@ -20,9 +20,9 @@ function checkPassword() {
   document.getElementById("results").innerHTML = "Results here";
   var check = false;
   var pass = document.getElementById("pw").value;
-  var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8");
+  var number = pass.includes("1") || pass.includes("3") || pass.includes("4") || pass.includes("5") || pass.includes("8") || pass.includes("0");
   while (number == true) {
-      var number = pass.includes("1" || "3" || "4" || "5" || "0" || "8");
+      var number = pass.includes("1") || pass.includes("3") || pass.includes("4") || pass.includes("5") || pass.includes("8") || pass.includes("0");
       var pass = pass.replace("3", "e");
       var pass = pass.replace("4", "a");
       var pass = pass.replace("1", "i");
